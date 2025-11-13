@@ -1,0 +1,172 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Page Wrapper */
+.booking-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-bottom: 3rem;
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #1e90ff;
+  margin-bottom: 2rem;
+}
+
+/* Form Styling */
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.booking-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.booking-form input {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.booking-form input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+  outline: none;
+}
+
+.booking-form button {
+  grid-column: span 2;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  justify-self: center;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background-color: #007acc;
+  transform: translateY(-2px);
+}
+
+/* Results Container */
+.results-container h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1e90ff;
+}
+
+/* Ride Cards Grid */
+.rides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Ride Card */
+.ride-card {
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ride-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.ride-card h3 {
+  color: #1e90ff;
+  margin-bottom: 1rem;
+}
+
+.ride-card p {
+  margin: 0.5rem 0;
+}
+
+.ride-card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #32cd32;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ride-card button:hover {
+  background-color: #28a428;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+  .booking-form button {
+    grid-column: span 1;
+    width: 100%;
+  }
+}
+/* Search Bar */
+.search-bar {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30,144,255,0.5);
+  outline: none;
+}
+
+/* Rating Stars */
+.rating {
+  color: #f1c40f; /* gold */
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}

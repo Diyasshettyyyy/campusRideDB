@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #90aac4, #2b67bb);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* Story Section */
+.story {
+  background-color: #fff;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.story h2 {
+  color: #1e90ff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.story p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Mission & Vision Section */
+.missionVision {
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.missionVision h2 {
+  text-align: center;
+  color: #1e90ff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.missionVision .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.missionVision .card {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.missionVision .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.missionVision .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.missionVision .card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Team Section */
+.team {
+  background-color: #fff;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.team h2 {
+  text-align: center;
+  color: #1e90ff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.teamMember {
+  background-color: #f4f7fa;
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.teamMember:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.memberAvatar {
+  width: 70px;
+  height: 70px;
+  background-color: #1e90ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem auto;
+}
+
+.teamMember h3 {
+  margin: 0.5rem 0;
+  color: #1e90ff;
+}
+
+.memberRole {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.memberBio {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/* Vision Section */
+.vision {
+  background-color: #fff;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.vision h2 {
+  text-align: center;
+  color: #1e90ff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.vision p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .missionVision .card, .teamMember {
+    padding: 1.5rem 1rem;
+  }
+}

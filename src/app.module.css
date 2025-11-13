@@ -1,0 +1,175 @@
+/* --- General Styles --- */
+main {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* --- Hero Section --- */
+.hero {
+  background: linear-gradient(to right, #eef7ff, #fff6ee);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.heroBtns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  font-size: 1rem;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Blue solid button */
+.btnPrimary {
+  background-color: #4d9be6;
+  color: white;
+  font-weight: 600;
+}
+
+.btnPrimary:hover {
+  background-color: #2b7cd4;
+}
+
+/* Outline button */
+.btnSecondary {
+  border: 2px solid #4d9be6;
+  color: #4d9be6;
+  font-weight: 600;
+  background: transparent;
+}
+
+.btnSecondary:hover {
+  background-color: #4d9be6;
+  color: white;
+}
+
+/* --- Features Section --- */
+.features {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* --- Stats Section --- */
+.stats {
+  background: #f8f9fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.statsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.statCard {
+  background: white;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4d9be6;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* --- CTA Section --- */
+.cta {
+  background: linear-gradient(90deg, #4d9be6, #62d6a5);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta .btnPrimary {
+  background: white;
+  color: #4d9be6;
+}
+
+.cta .btnPrimary:hover {
+  background: #2b7cd4;
+  color: white;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.2rem;
+  }
+  .heroBtns {
+    flex-direction: column;
+  }
+  .statsGrid {
+    flex-direction: column;
+  }
+}

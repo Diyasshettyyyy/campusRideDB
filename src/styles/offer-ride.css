@@ -1,0 +1,86 @@
+/* Page Wrapper */
+.offer-ride-page {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Form Header */
+.form-container h1 {
+  text-align: center;
+  color: #32cd32;
+  margin-bottom: 2rem;
+}
+
+/* Form Layout */
+.offer-ride-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.offer-ride-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-ride-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.offer-ride-form input {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.offer-ride-form input:focus {
+  border-color: #32cd32;
+  box-shadow: 0 0 5px rgba(50, 205, 50, 0.5);
+  outline: none;
+}
+
+/* Submit Button */
+.offer-ride-form button {
+  grid-column: span 2;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #32cd32;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  justify-self: center;
+  transition: all 0.3s;
+}
+
+.offer-ride-form button:hover {
+  background-color: #28a428;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .offer-ride-form {
+    grid-template-columns: 1fr;
+  }
+  .offer-ride-form button {
+    grid-column: span 1;
+    width: 100%;
+  }
+}
